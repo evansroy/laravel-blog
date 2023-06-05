@@ -26,4 +26,9 @@ class PagesController extends Controller
 
         return view ('pages.services')->with($data);
     }
+
+    public function contacts (){
+        $title = 'Contact Us Page';
+        return view ('pages.contacts')-> with('title', $title);
+    }
 }
