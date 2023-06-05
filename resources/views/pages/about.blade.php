@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>About Page</h1>
+    <h1 class="text-3xl font-bold">{{$title}}</h1>
     <p>This is the About Page</p>
 @endsection
