@@ -18,7 +18,7 @@ class PostController extends Controller
         // $posts = Post::orderBy('title','desc')->take(1)->get();
         // $posts = Post::orderBy('title','desc')->get();
 
-        
+
         $posts = Post::orderBy('title','desc')->paginate(10);
         return view('posts.index')->with('posts', $posts);
     }
@@ -28,7 +28,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
