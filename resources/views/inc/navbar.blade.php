@@ -14,6 +14,8 @@
                             <a href="/about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                             <a href="/services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
                             <a href="/contacts" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                            <a href="/posts" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
+
                         </div>
                     </div>
                 </div>
