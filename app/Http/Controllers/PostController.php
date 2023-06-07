@@ -44,14 +44,14 @@ class PostController extends Controller
         ]);
 
 
-    // Create a new post with the validated data
-    $post = new Post();
-    $post->title = $request->input('title');
-    $post->body = $request->input('body');
-    $post->save();
+        // Create a new post with the validated data
+        $post = new Post();
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
 
-    // Redirect to the index page or show the newly created post
-     return redirect('/posts')->with('success', 'Post Created');
+        // Redirect to the index page or show the newly created post
+        return redirect('/posts')->with('success', 'Post Created');
     }
 
     /**
@@ -77,7 +77,21 @@ class PostController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+         // Validate the incoming request data
+         $this->validate($request, [
+            'title' => 'required',
+            'body'  => 'required'
+        ]);
+
+
+        // Create a new post with the validated data
+        $post = Post::find($id);
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->save();
+
+        // Redirect to the index page or show the newly created post
+        return redirect('/posts')->with('success', 'Post Updated');
     }
 
     /**
