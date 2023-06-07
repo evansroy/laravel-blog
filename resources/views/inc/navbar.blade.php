@@ -5,16 +5,22 @@
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
                         <a href="/">
-                            <img class="h-12 w-auto" src="https://evansroy.github.io/port-folio/images/OCTAL%20IDEAS.svg" alt="Logo">
+                            <img class="h-12 w-auto" src="https://evansroy.github.io/port-folio/images/OCTAL%20IDEAS.svg"
+                                alt="Logo">
                         </a>
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
-                            <a href="/" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                            <a href="/about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                            <a href="/services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                            <a href="/contacts" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-                            <a href="/posts" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
+                            <a href="/"
+                                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                            <a href="/about"
+                                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                            <a href="/services"
+                                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                            <a href="/contacts"
+                                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                            <a href="/posts"
+                                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
 
                         </div>
                     </div>
@@ -22,6 +28,11 @@
                 <div class="hidden md:block">
                     <div class="ml-4 flex items-center md:ml-6">
                         <!-- Add any additional elements for the right side of the navbar here -->
+
+                        <a href="/posts/create"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Create
+                            Post</a>
+
                     </div>
                 </div>
             </div>
