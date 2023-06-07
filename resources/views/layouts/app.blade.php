@@ -13,8 +13,9 @@
     <div class="min-h-screen flex flex-col">
 
         @include('inc.navbar')
-        
+
         <main class="flex-grow p-6">
+            @include('inc.messages')
             @yield('content')
         </main>
 
