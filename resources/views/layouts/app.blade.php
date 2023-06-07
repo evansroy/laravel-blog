@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     <title>{{ config('app.name', 'Octal Blog') }}</title>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 </head>
 
 <body class="bg-gray-100">
@@ -24,6 +25,10 @@
             <h3>Footer</h3>
         </footer>
     </div>
+
+    <script>
+        CKEDITOR.replace('body');
+    </script>
 </body>
 
 </html>

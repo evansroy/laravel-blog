@@ -10,7 +10,7 @@
 
     <div class="form-group">
         {{ Form::label('body', 'Body', ['class' => 'block font-medium text-sm text-gray-700']) }}
-        {{ Form::textarea('body', null, ['id' => 'editor','class' => 'form-input mt-1 block w-full rounded-md shadow-sm p-4 placeholder => Enter Post Body']) }}
+        {{ Form::textarea('body', null, ['id' => 'body', 'class' => 'form-input mt-1 block w-full rounded-md shadow-sm p-4 placeholder => Enter Post Body']) }}
     </div>
 
     {{ Form::submit('Submit', ['class' => 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4']) }}
