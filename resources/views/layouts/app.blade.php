@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+
+    <!-- Scripts -->
+    @viteReactRefresh
+    {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
     @vite('resources/css/app.css')
-    <title>{{ config('app.name', 'Octal Blog') }}</title>
     <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 </head>
-
 <body class="bg-gray-100">
-    <div class="min-h-screen flex flex-col">
+    <div id="app" class="min-h-screen flex flex-col">
 
         @include('inc.navbar')
 
-        <main class="flex-grow p-6">
+        <main class="flex-grow p-8">
             @include('inc.messages')
             @yield('content')
         </main>
@@ -25,10 +34,8 @@
             <h3>Footer</h3>
         </footer>
     </div>
-
     <script>
         CKEDITOR.replace('body');
     </script>
 </body>
-
 </html>
